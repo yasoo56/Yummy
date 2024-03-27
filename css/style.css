@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0D0D0D;
+}
+.bg{
+    background-color: #272B30 !important;
+}
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-left: 4px solid #FF3D00;
+    border-bottom: 4px solid transparent;
+    animation: rotation 0.5s linear infinite reverse;
+  }
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+.cursor {
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #949292 !important;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: all 0.5s;
+}
+
+.meal:hover .layer,
+.category:hover .layer,
+.searchMeal:hover .layer,
+.area:hover .layer,
+.categorrry:hover .layer,
+.ingred:hover .layer {
+    top: 0 !important;
+}
+
+.sideBar {
+    background-color: #0D0D0D;
+    width: 55%;
+    left: 0;
+}
+.side-menu{
+    left: 0;
+}
+.side-header {
+    width: 15%;
+}
+
+.side-header .iconOpen i {
+    font-size: 30px;
+}
+
+.details ul li {
+    background-color: #CFF4FC;
+    border-radius: 10px;
+    color: #055160;
+}
